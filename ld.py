@@ -14,4 +14,3 @@ print(product["recomend"][1])
 
 product["recomend"].append("iPhone 6")
 
-print(product)
