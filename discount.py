@@ -1,6 +1,3 @@
-phone1 = {'name': 'iPhone Xs Plus', 'stock': 24, 'price': 65432.1, 'discount': 25}
-phone2 = {'name': 'Samsung Galaxy S10', 'stock': 8, 'price': 50000.0, 'discount': 10}
-phone3 = {'name': '', 'stock': 8, 'price': 10000.0, 'discount': 10}
 
 def discounted(price, discount, max_discount=20, name=""):
     price = abs(float(price))
@@ -13,12 +10,3 @@ def discounted(price, discount, max_discount=20, name=""):
     else:
         return price - (price * discount / 100)
 
-
-apple_desc = discounted(phone1["price"], phone1["discount"], name=phone1["name"])
-print(apple_desc)
-
-android_desc = discounted(phone2["price"], phone2["discount"], name=phone2["name"])
-print(android_desc)
-
-noname_desc = discounted(phone3["price"], phone3["discount"], name=phone3["name"])
-print(noname_desc)
