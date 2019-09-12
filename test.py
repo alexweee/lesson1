@@ -1,4 +1,3 @@
-a = input()
-f = print(a)
-
-print(type(f))
+slova = {"Как дела": "Хорошо!", "Что делаешь?": "Программирую"}
+g = slova["Как дела"]
+print("Как дела" in slova)
