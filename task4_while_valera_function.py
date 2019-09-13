@@ -1,17 +1,17 @@
-def find_person(name):
+def find_person(name, spisok):
     x = 0
     while spisok[x] != name:
         print(spisok.pop(x))
         if spisok[x] == name:
-            print("{} нашелся".format(name))
+            return "{} нашелся".format(name)
             break
 
 
 
-spisok = ["Вася", "Маша", "Петя", "Валера", "Саша", "Даша"]
+list_of_names = ["Вася", "Маша", "Петя", "Валера", "Саша", "Даша"]
 
 
-print(find_person("Валера"))
+print(find_person("Валера", list_of_names))
     
 
 
